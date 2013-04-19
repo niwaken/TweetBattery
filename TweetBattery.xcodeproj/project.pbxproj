@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFF3318E171D2BE60091AFD9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF3318D171D2BE60091AFD9 /* UIKit.framework */; };
+		BFF33190171D2BE60091AFD9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF3318F171D2BE60091AFD9 /* Foundation.framework */; };
+		BFF33192171D2BE60091AFD9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF33191171D2BE60091AFD9 /* CoreGraphics.framework */; };
+		BFF33198171D2BE60091AFD9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFF33196171D2BE60091AFD9 /* InfoPlist.strings */; };
+		BFF3319A171D2BE60091AFD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF33199171D2BE60091AFD9 /* main.m */; };
+		BFF3319E171D2BE60091AFD9 /* TweetBatteryAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF3319D171D2BE60091AFD9 /* TweetBatteryAppDelegate.m */; };
+		BFF331A0171D2BE60091AFD9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3319F171D2BE60091AFD9 /* Default.png */; };
+		BFF331A2171D2BE60091AFD9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF331A1171D2BE60091AFD9 /* Default@2x.png */; };
+		BFF331A4171D2BE60091AFD9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF331A3171D2BE60091AFD9 /* Default-568h@2x.png */; };
+		BFF331A7171D2BE60091AFD9 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFF331A5171D2BE60091AFD9 /* MainStoryboard.storyboard */; };
+		BFF331AA171D2BE60091AFD9 /* TweetBatteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF331A9171D2BE60091AFD9 /* TweetBatteryViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BFF3318A171D2BE60091AFD9 /* TweetBattery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TweetBattery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFF3318D171D2BE60091AFD9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BFF3318F171D2BE60091AFD9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BFF33191171D2BE60091AFD9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BFF33195171D2BE60091AFD9 /* TweetBattery-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TweetBattery-Info.plist"; sourceTree = "<group>"; };
+		BFF33197171D2BE60091AFD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BFF33199171D2BE60091AFD9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BFF3319B171D2BE60091AFD9 /* TweetBattery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TweetBattery-Prefix.pch"; sourceTree = "<group>"; };
+		BFF3319C171D2BE60091AFD9 /* TweetBatteryAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TweetBatteryAppDelegate.h; sourceTree = "<group>"; };
+		BFF3319D171D2BE60091AFD9 /* TweetBatteryAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TweetBatteryAppDelegate.m; sourceTree = "<group>"; };
+		BFF3319F171D2BE60091AFD9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		BFF331A1171D2BE60091AFD9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		BFF331A3171D2BE60091AFD9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BFF331A6171D2BE60091AFD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		BFF331A8171D2BE60091AFD9 /* TweetBatteryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TweetBatteryViewController.h; sourceTree = "<group>"; };
+		BFF331A9171D2BE60091AFD9 /* TweetBatteryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TweetBatteryViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFF33187171D2BE60091AFD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF3318E171D2BE60091AFD9 /* UIKit.framework in Frameworks */,
+				BFF33190171D2BE60091AFD9 /* Foundation.framework in Frameworks */,
+				BFF33192171D2BE60091AFD9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFF33181171D2BE50091AFD9 = {
+			isa = PBXGroup;
+			children = (
+				BFF33193171D2BE60091AFD9 /* TweetBattery */,
+				BFF3318C171D2BE60091AFD9 /* Frameworks */,
+				BFF3318B171D2BE60091AFD9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFF3318B171D2BE60091AFD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFF3318A171D2BE60091AFD9 /* TweetBattery.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFF3318C171D2BE60091AFD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFF3318D171D2BE60091AFD9 /* UIKit.framework */,
+				BFF3318F171D2BE60091AFD9 /* Foundation.framework */,
+				BFF33191171D2BE60091AFD9 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFF33193171D2BE60091AFD9 /* TweetBattery */ = {
+			isa = PBXGroup;
+			children = (
+				BFF3319C171D2BE60091AFD9 /* TweetBatteryAppDelegate.h */,
+				BFF3319D171D2BE60091AFD9 /* TweetBatteryAppDelegate.m */,
+				BFF331A5171D2BE60091AFD9 /* MainStoryboard.storyboard */,
+				BFF331A8171D2BE60091AFD9 /* TweetBatteryViewController.h */,
+				BFF331A9171D2BE60091AFD9 /* TweetBatteryViewController.m */,
+				BFF33194171D2BE60091AFD9 /* Supporting Files */,
+			);
+			path = TweetBattery;
+			sourceTree = "<group>";
+		};
+		BFF33194171D2BE60091AFD9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFF33195171D2BE60091AFD9 /* TweetBattery-Info.plist */,
+				BFF33196171D2BE60091AFD9 /* InfoPlist.strings */,
+				BFF33199171D2BE60091AFD9 /* main.m */,
+				BFF3319B171D2BE60091AFD9 /* TweetBattery-Prefix.pch */,
+				BFF3319F171D2BE60091AFD9 /* Default.png */,
+				BFF331A1171D2BE60091AFD9 /* Default@2x.png */,
+				BFF331A3171D2BE60091AFD9 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFF33189171D2BE60091AFD9 /* TweetBattery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFF331AD171D2BE60091AFD9 /* Build configuration list for PBXNativeTarget "TweetBattery" */;
+			buildPhases = (
+				BFF33186171D2BE60091AFD9 /* Sources */,
+				BFF33187171D2BE60091AFD9 /* Frameworks */,
+				BFF33188171D2BE60091AFD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TweetBattery;
+			productName = TweetBattery;
+			productReference = BFF3318A171D2BE60091AFD9 /* TweetBattery.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFF33182171D2BE50091AFD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TweetBattery;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Kenichi Niwa";
+			};
+			buildConfigurationList = BFF33185171D2BE50091AFD9 /* Build configuration list for PBXProject "TweetBattery" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BFF33181171D2BE50091AFD9;
+			productRefGroup = BFF3318B171D2BE60091AFD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFF33189171D2BE60091AFD9 /* TweetBattery */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFF33188171D2BE60091AFD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF33198171D2BE60091AFD9 /* InfoPlist.strings in Resources */,
+				BFF331A0171D2BE60091AFD9 /* Default.png in Resources */,
+				BFF331A2171D2BE60091AFD9 /* Default@2x.png in Resources */,
+				BFF331A4171D2BE60091AFD9 /* Default-568h@2x.png in Resources */,
+				BFF331A7171D2BE60091AFD9 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFF33186171D2BE60091AFD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF3319A171D2BE60091AFD9 /* main.m in Sources */,
+				BFF3319E171D2BE60091AFD9 /* TweetBatteryAppDelegate.m in Sources */,
+				BFF331AA171D2BE60091AFD9 /* TweetBatteryViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BFF33196171D2BE60091AFD9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFF33197171D2BE60091AFD9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BFF331A5171D2BE60091AFD9 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFF331A6171D2BE60091AFD9 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFF331AB171D2BE60091AFD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BFF331AC171D2BE60091AFD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFF331AE171D2BE60091AFD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TweetBattery/TweetBattery-Prefix.pch";
+				INFOPLIST_FILE = "TweetBattery/TweetBattery-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BFF331AF171D2BE60091AFD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TweetBattery/TweetBattery-Prefix.pch";
+				INFOPLIST_FILE = "TweetBattery/TweetBattery-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFF33185171D2BE50091AFD9 /* Build configuration list for PBXProject "TweetBattery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFF331AB171D2BE60091AFD9 /* Debug */,
+				BFF331AC171D2BE60091AFD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFF331AD171D2BE60091AFD9 /* Build configuration list for PBXNativeTarget "TweetBattery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFF331AE171D2BE60091AFD9 /* Debug */,
+				BFF331AF171D2BE60091AFD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFF33182171D2BE50091AFD9 /* Project object */;
+}
