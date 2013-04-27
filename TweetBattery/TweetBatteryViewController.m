@@ -17,9 +17,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 
     
+    // バッテリー状態監視をONにする
     [UIDevice currentDevice].batteryMonitoringEnabled = YES;
     
     [[NSNotificationCenter defaultCenter] addObserver:self
