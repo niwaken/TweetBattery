@@ -112,4 +112,55 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+// 呼ばれた時点の時刻を文字列で返すメソッド
+- (NSString*)getNowTimeString
+{
+
+    NSDate *now = [NSDate date];
+    NSDateFormatter *dtFormatter = [[NSDateFormatter alloc]init];
+    [dtFormatter setDateFormat:@"hh時mm分"];
+
+    NSString *ret = [[NSString alloc]initWithString:[dtFormatter stringFromDate:now]];
+
+    return ret;
+    
+}
+
+- (NSString*)createTweetString
+{
+    
+    NSMutableString *tweetString = [[NSMutableString alloc]init];
+    
+    
+    [tweetString appendString:[self getNowTimeString]];
+    
+    [tweetString appendString:@"残容量は"];
+    // 残容量をラベルから現在の%を取得してテキストに
+    [tweetString appendString:_PercentLabel.text];
+    
+    [tweetString appendString:@" 現在のバッテリーの状態は"];
+    // 充電中ステータスを付加
+    [tweetString appendString:_StatusLabel.text];
+
+    return tweetString;
+    
+}
+
+
+// TweetButtonを押された時の処理
+- (IBAction)pushTweetButton:(id)sender {
+
+    NSMutableString *tweetString = [[NSMutableString alloc]init];
+    
+    [tweetString appendString:[self createTweetString]];
+
+    
+    // for Debug
+    NSLog(@"%@", tweetString);
+    
+    
+}
+
+
 @end
