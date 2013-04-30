@@ -119,7 +119,7 @@
 
     NSDate *now = [NSDate date];
     NSDateFormatter *dtFormatter = [[NSDateFormatter alloc]init];
-    [dtFormatter setDateFormat:@"hh時mm分"];
+    [dtFormatter setDateFormat:@"H時m分"];
 
     NSString *ret = [[NSString alloc]initWithString:[dtFormatter stringFromDate:now]];
 
@@ -127,6 +127,7 @@
     
 }
 
+// つぶやき用文字列作成メソッド
 - (NSString*)createTweetString
 {
     
@@ -135,18 +136,37 @@
     
     [tweetString appendString:[self getNowTimeString]];
     
-    [tweetString appendString:@"残容量は"];
+    [tweetString appendString:@"の残容量は"];
     // 残容量をラベルから現在の%を取得してテキストに
     [tweetString appendString:_PercentLabel.text];
     
-    [tweetString appendString:@" 現在のバッテリーの状態は"];
+    [tweetString appendString:@"、バッテリーの状態は"];
     // 充電中ステータスを付加
     [tweetString appendString:_StatusLabel.text];
 
-    return tweetString;
+    // 改行とハッシュタグ付加
+    [tweetString appendString:@"\n #tweetBattery"];
+
+     return tweetString;
     
 }
 
+// Twitterに呟きを行うメソッド
+- (void)doTweet:(NSString*)tweetString {
+
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]) {
+        NSString *serviceType = SLServiceTypeTwitter;
+        SLComposeViewController *composeCtl = [SLComposeViewController composeViewControllerForServiceType:serviceType];
+        [composeCtl setInitialText:tweetString];
+//        [composeCtl setCompletionHandler:^(SLComposeViewControllerResult result) {
+//            if (result == SLComposeViewControllerResultDone) {
+//
+//            }
+//        }];
+        [self presentViewController:composeCtl animated:YES completion:nil];
+    }
+    
+}
 
 // TweetButtonを押された時の処理
 - (IBAction)pushTweetButton:(id)sender {
@@ -155,9 +175,9 @@
     
     [tweetString appendString:[self createTweetString]];
 
-    
+    [self doTweet:[self createTweetString]];
     // for Debug
-    NSLog(@"%@", tweetString);
+//    NSLog(@"%@", tweetString);
     
     
 }

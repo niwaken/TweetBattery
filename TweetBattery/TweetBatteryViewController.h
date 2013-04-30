@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Social/Social.h>
 
 @interface TweetBatteryViewController : UIViewController
     @property (strong, nonatomic) IBOutlet UILabel *PercentLabel;

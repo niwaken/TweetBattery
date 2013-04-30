@@ -18,6 +18,9 @@
 		BFF331A4171D2BE60091AFD9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF331A3171D2BE60091AFD9 /* Default-568h@2x.png */; };
 		BFF331A7171D2BE60091AFD9 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFF331A5171D2BE60091AFD9 /* MainStoryboard.storyboard */; };
 		BFF331AA171D2BE60091AFD9 /* TweetBatteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF331A9171D2BE60091AFD9 /* TweetBatteryViewController.m */; };
+		BFF5EDD2172FB08700FCABDC /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF5EDD1172FB08700FCABDC /* Social.framework */; };
+		BFF5EDD4172FC10500FCABDC /* batt_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF5EDD3172FC10500FCABDC /* batt_nor.png */; };
+		BFF5EDD6172FC10A00FCABDC /* batt_rati.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF5EDD5172FC10A00FCABDC /* batt_rati.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,10 @@
 		BFF331A6171D2BE60091AFD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		BFF331A8171D2BE60091AFD9 /* TweetBatteryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TweetBatteryViewController.h; sourceTree = "<group>"; };
 		BFF331A9171D2BE60091AFD9 /* TweetBatteryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TweetBatteryViewController.m; sourceTree = "<group>"; };
+		BFF5EDCF172FABE600FCABDC /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		BFF5EDD1172FB08700FCABDC /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		BFF5EDD3172FC10500FCABDC /* batt_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batt_nor.png; sourceTree = "<group>"; };
+		BFF5EDD5172FC10A00FCABDC /* batt_rati.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batt_rati.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFF5EDD2172FB08700FCABDC /* Social.framework in Frameworks */,
 				BFF3318E171D2BE60091AFD9 /* UIKit.framework in Frameworks */,
 				BFF33190171D2BE60091AFD9 /* Foundation.framework in Frameworks */,
 				BFF33192171D2BE60091AFD9 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +64,10 @@
 		BFF33181171D2BE50091AFD9 = {
 			isa = PBXGroup;
 			children = (
+				BFF5EDD5172FC10A00FCABDC /* batt_rati.png */,
+				BFF5EDD3172FC10500FCABDC /* batt_nor.png */,
+				BFF5EDD1172FB08700FCABDC /* Social.framework */,
+				BFF5EDCF172FABE600FCABDC /* Accounts.framework */,
 				BFF33193171D2BE60091AFD9 /* TweetBattery */,
 				BFF3318C171D2BE60091AFD9 /* Frameworks */,
 				BFF3318B171D2BE60091AFD9 /* Products */,
@@ -164,6 +176,8 @@
 				BFF331A2171D2BE60091AFD9 /* Default@2x.png in Resources */,
 				BFF331A4171D2BE60091AFD9 /* Default-568h@2x.png in Resources */,
 				BFF331A7171D2BE60091AFD9 /* MainStoryboard.storyboard in Resources */,
+				BFF5EDD4172FC10500FCABDC /* batt_nor.png in Resources */,
+				BFF5EDD6172FC10A00FCABDC /* batt_rati.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +313,7 @@
 				BFF331AF171D2BE60091AFD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
